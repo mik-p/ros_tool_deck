@@ -8,3 +8,4 @@ An implementation of a 'tool changer' type system that publishes transforms for 
 
 1. A user may need to use different conflicting features on a robot requiring the activation and deactivation of capabilities (used with ROS capabilities interface)
 
+1. Hierarchically connecting 2 robots together? For example creating a landing pad for an aerial drone on a robotic ground vehicle (this would probably be a bad idea).
