@@ -1,0 +1,22 @@
+update_rate: 100.0 # default 1 Hz
+# persistence_dir: ~/.ros/ # defaults to ~/.ros/
+base_frame: "base_link" # default
+deck_frame: "tool_deck" # default
+tool_frame: "sensor_ref1" # active tool reference frame
+# where the deck will appear relative to base_frame
+deck_pose: [[-0.5, 0, 2], [0, 0, 0]]
+
+# for example:
+# list of available tools for tool deck
+# tools must be uniquely named
+# tools:
+#   - drill_12mm
+#   - endmill_8mm
+
+# the tools available on the deck
+# drill_12mm:
+#   active: true
+#   # location relative to deck_frame
+#   rest_pose: [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+#   # location relative to tool frame
+#   active_pose: [[0.1, 0.1, 0.0], [0.0, 0.0, 0.0]]
