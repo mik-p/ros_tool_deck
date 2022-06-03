@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- tool deck configuration -->
+  <arg name="config_file" default="$(find tool_deck_server)/config/tool_deck.yaml" />
+
+  <node name="tool_deck" pkg="tool_deck_server" type="tool_deck_node">
+    <rosparam file="$(arg config_file)" command="load"/>
+  </node>
+
+</launch>
